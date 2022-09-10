@@ -7,21 +7,13 @@
  */
 int main(void)
 {
-int a;
+char ch, new_line;
 
-for (a = 0 ; a <= 99 ; )
+new_line = '\n';
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-putchar((a / 10) + '0');
-putchar((a % 10) + '0');
-if (a < 99)
-{
-putchar(',');
-putchar(' ');
-a++;
+putchar(ch);
 }
-else
-a++;
-}
-putchar('\n');
+putchar(new_line);
 return (0);
 }

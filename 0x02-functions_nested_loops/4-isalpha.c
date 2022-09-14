@@ -1,11 +1,9 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _isalpha - check whether a character is alphabet or not.
- * @c: character to be checked.
- * Return: 1 if the character is an alphabet.
- * Return 0 otherwise.
+ * main - check the code.
+ *
+ * Return: Always 0.
  */
 
 int _isalpha(int c)

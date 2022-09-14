@@ -1,11 +1,10 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
-  * main - prints the string "alx"
-  *
-  * Return: 0 on success.
-  */
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 
 int main(void)
 {

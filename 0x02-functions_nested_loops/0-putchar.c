@@ -1,21 +1,23 @@
-main.h
+#include "main.h"
+
 
 /**
- * main - check the code
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: nothing, return void
  */
 
 int main(void)
 {
-	char *str;
-	int i;
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 
-	str = "Alx";
-	for (i = 0; i < 9; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
-	return (0);
+return (0);
 }

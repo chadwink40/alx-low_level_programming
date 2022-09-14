@@ -1,10 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * print_to_98 - print all integer numbers, begin from input number stop at 98.
- * @n: the input number
- * Return: void
+ * main - check the code
+ *
+ * Return: Always 0.
  */
 
 void print_to_98(int n)

@@ -2,8 +2,8 @@
 
 /**
  * main - check the code.
- *
- * Return: Always 0.
+ * @c: character to be input.
+ * Return: 1 if it is a lower case, 0 is not a lowercase
  */
 
 int _islower(int c)

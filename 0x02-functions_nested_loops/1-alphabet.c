@@ -1,10 +1,12 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_alphabet - from a-z.
- * Return: Nothing.
+ * main - check the code
+ *
+ * Return: Always 0.
  */
+
+int main(void)
 
 void print_alphabet(void)
 {

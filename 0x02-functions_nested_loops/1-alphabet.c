@@ -1,4 +1,5 @@
-#include "alphabet.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_alphabet - from a-z.

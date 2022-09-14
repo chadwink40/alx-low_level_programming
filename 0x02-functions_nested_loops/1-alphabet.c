@@ -1,20 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - print alphabet lowercase
  *
- * Return: Always 0.
+ * Return: Nothing.
  */
-
-int main(void)
 
 void print_alphabet(void)
 {
-	char c;
+	char a_bet;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (a_bet = 'a'; a_bet <= 'z'; a_bet++)
 	{
-		_putchar(c);
+		_putchar(a_bet);
 	}
 	_putchar('\n');
 }

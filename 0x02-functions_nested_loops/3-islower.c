@@ -1,10 +1,9 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _islower - tell a character is a lowercase
- * @c: character to be input.
- * Return: 1 if it is a lowercase, 0 is not a lowercase.
+ * main - check the code.
+ *
+ * Return: Always 0.
  */
 
 int _islower(int c)

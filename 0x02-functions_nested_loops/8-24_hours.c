@@ -1,10 +1,11 @@
-#include <stdlib.h> 
-#include <stdio.h>
+#include "main.h"
 
 /**
- * jack_bauer - prints every minutes in a day in HH:MM format
- * Return: the value of hours and minutes
+ * main - check the code
+ *
+ * Return: Always 0.
  */
+
 void jack_bauer(void)
 {
 	int h, m;

@@ -11,7 +11,7 @@ int main(void)
 	char *str;
 	int i;
 
-	str = "Holberton";
+	str = "Alx";
 	for (i = 0; i < 9; i++)
 	{
 		_putchar(str[i]);

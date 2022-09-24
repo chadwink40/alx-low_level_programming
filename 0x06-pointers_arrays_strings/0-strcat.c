@@ -1,20 +1,29 @@
+#include "main.h"
 /**
- * _strchr - a function that locates a character in string.
- * @s: a pointer point to string
- * @c: a constant character search for.
- *
- * Return: the pointer that the string (in success) or NULL for not found.
+ *_strcat - concatenates two strings
+ *@dest: A pointer to a character that will be changed
+ *@src: A pointer to a character that will also be changed
+ *Return: dest
  */
 
-char *_strchr(char *s, char c)
+char *_strcat(char *dest, char *src)
 {
-		while (*s != '\0')
-				{
-							if (*s == c)
-											return (s);
-									else if (*(s + 1) == c)
-													return (s + 1);
-											s++;
-												}
-			return (s + 1);
+int i, j;
+
+i = 0;
+while (dest[i] != '\0')
+{
+i++;
+}
+
+j = 0;
+while (src[j] != '\0')
+{
+dest[i] = src[j];
+j++;
+i++;
+}
+dest[i] = '\0';
+
+return (dest);
 }

@@ -1,73 +1,30 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-char *_strstr(char *haystack, char *needle)
-{
-	unsigned int len_n, len_h, i, cmp;
-	char *newstr;
+ * _strstr - first occurrence of the substring needle in the string haystack
+ * @haystack: main str to be examined
+ * @needle: searched in haystack
+ * Return: return 0
+ **/
 
-	len_n = len_h = 0;
-	while (needle[len_n] != '\0')
-		len_n++;
-	while (haystack[len_h] != '\0')
-		len_h++;
-	newstr = (char *)malloc(len_n + 1);
-	for (i = 0; i < (len_h - len_n) + 1; i++)
+char  *_strstr(char *haystack, char *needle)
+{
+	char *str1, *str2; /*Declaring variables*/
+
+	while (*haystack != '\0')
 	{
-		_strcpy(newstr, haystack, len_n);
-		cmp = _strcmp(needle, newstr, len_n);
-		if (cmp == 1)
+		str1 = haystack; /*values*/
+		str2 = needle;
+
+		/*Star WHILE*/
+		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
 		{
-			free(newstr);
-			return (haystack);
+			haystack++;
+			str2++;
 		}
-		haystack++;
+		if (*str2 == '\0')
+			return (str1);
+		haystack = str1 + 1;
 	}
-	free(newstr);
-	haystack = 0;
-	return (haystack);
-}
-
-/**
- * _strcpy - copy size of len_n string
- * @dest: newstring
- * @src: source string
- * @len_n: size
- *
- * Return: void
- */
-
-void _strcpy(char *dest, char *src, unsigned int len_n)
-{
-	unsigned int i;
-
-	for (i = 0; i < len_n; i++)
-		dest[i] = src[i];
-	dest[len_n] = '\0';
-}
-
-/**
- * _strcmp - compare two strings
- * @needle: a sample string
- * @newstr: a compare string
- * @len_n: the size of needle string
- *
- * Return: the same return 1, diff 0;
- */
-
-unsigned int _strcmp(char *needle, char *newstr, unsigned int len_n)
-{
-	unsigned int i;
-
-	for (i = 0; i < len_n && needle[i] == newstr[i]; i++)
-		;
-	if (needle[++i] == '\0')
-		return (1);
-	else
-		return (0);
+	return (0);
 }
